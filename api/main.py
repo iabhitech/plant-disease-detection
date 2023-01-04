@@ -7,8 +7,8 @@ import tensorflow as tf
 
 app = FastAPI()
 
-MODEL = tf.keras.models.load_model('D:\\Coding\\jupyter\\PlantDiseaseDetection\\models\\1')
-CLASS_NAMES = ['Tomato_Bacterial_spot', 'Tomato_Early_blight', 'Tomato_Septoria_leaf_spot', 'Tomato__Target_Spot']
+MODEL = tf.keras.models.load_model('D:\\Coding\\jupyter\\PlantDiseaseDetection\\models\\2')
+CLASS_NAMES = [ 'Tomato_Bacterial_spot', 'Tomato_Early_blight', 'Tomato_Late_blight', 'Tomato_Leaf_Mold', 'Tomato_Septoria_leaf_spot', 'Tomato_Spider_mites_Two_spotted_spider_mite', 'Tomato__Target_Spot', 'Tomato__Tomato_YellowLeaf__Curl_Virus', 'Tomato__Tomato_mosaic_virus', 'Tomato_healthy']
 
 @app.get("/ping")
 async def ping():
@@ -38,4 +38,4 @@ async def predict(
   
 
 if __name__ == "__main__":
-  uvicorn.run(app, host='localhost', port=8080)
+  uvicorn.run(app, host='localhost', port=3001)
