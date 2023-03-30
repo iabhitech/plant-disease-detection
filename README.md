@@ -10,5 +10,5 @@ Plant Disease Detection using Deep Learning
 
 # Author
 Abhineet Verma
-
 Email: contact@iabhitech.com
+LinkedIn: http://linkedin.com/in/iabhitech
